@@ -46,17 +46,17 @@ class Game:
         p2 = self.moves[1].upper()[0]
         # Jika P1 menang maka 0, jika P2 menang maka 1, jika seri makan -1
         winner = -1
-        if p1 == "R" and p2 == "S":
+        if p1 == "B" and p2 == "G":
             winner = 0
-        elif p1 == "S" and p2 == "R":
+        elif p1 == "G" and p2 == "B":
             winner = 1
-        elif p1 == "P" and p2 == "R":
+        elif p1 == "K" and p2 == "B":
             winner = 0
-        elif p1 == "R" and p2 == "P":
+        elif p1 == "B" and p2 == "K":
             winner = 1
-        elif p1 == "S" and p2 == "P":
+        elif p1 == "G" and p2 == "K":
             winner = 0
-        elif p1 == "P" and p2 == "S":
+        elif p1 == "K" and p2 == "G":
             winner = 1
 
         return winner
